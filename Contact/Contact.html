@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find My Book Application</title>
+    <!-- IcoonCDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- StyleSheet -->
+    <link rel="stylesheet" href="Contact.css">
+</head>
+
+<body>
+    <section id="header">
+        <header>
+            <h1>Welcome To Find My Book Application</h1>
+        </header>
+        <div class="container">
+            <div class="navbar">
+                <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+                <div class="navbar-links" id="navLinks">
+                    <a href="../index.html">Home</a>
+                    <a href="../Search/Search.html">Search</a>
+                    <a href="../Contact/Contact.html">Contact</a>
+                    <a href="../Registration/Registration.html">Member</a>
+                    <a href="../Login/Login.html">Login</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="Contact">
+        <div class="container">
+            <h1 class="Contact-h1">Our Location</h1>
+            <div class="Contact-contant">
+
+                <div class="contact-map">
+                    <div class="contect-text-map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d102041.94861702646!2d79.4766794186408!3d18.110557942319417!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a334bd4e1161b4f%3A0x7f4dea9a0d18958b!2sSR%20University!5e0!3m2!1sen!2sin!4v1731471670162!5m2!1sen!2sin"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="contact-details">
+                    <h2>University Library, SR University</h2>
+                    <p>Ananthasagar, Hanumakonda-506371</p>
+                    <p>Telangana, INDIA</p>
+                    <p>Phone: <a href="tel:+918702818384">+91 8702818384</a></p>
+                    <p>Email: <a href="mailto:library@sru.edu.in ">library@sru.edu.in</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="container-form">
+                <div class="contact-form">
+                    <h1 class="contact-form-h1">Contact Us</h1>
+                    <form>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+
+                        <button type="submit">Submit</button>
+                    </form>
+                    <div class="map-container" id="map"></div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- <footer> -->
+
+    <footer>
+        <div class="footer">
+            <div class="footer-nav">
+                <a href="../index.html">Home</a>
+                <a href="../Search/Search.html">Search</a>
+                <a href="../Contact/Contact.html">Contact</a>
+                <a href="../Registration/Registration.html">Member</a>
+                <a href="../Login/Login.html">Login</a>
+            </div>
+
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright © 2024; Designed by Pritty Biswas</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+
+</html>

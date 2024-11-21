@@ -1,0 +1,251 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: radial-gradient(#00f2fe, #9067c6);
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.container {
+    width: 80%;
+    padding: 0 10%;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}
+
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    transition: 1.5s;
+}
+
+.navbar a:hover {
+    background-color: #38bde9;
+    color: black;
+    border-radius: 5px;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.navbar-links {
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+
+/* Home section */
+
+
+.slider-container {
+    width: 100%;
+    height: 55vh;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    height: 400px;
+}
+
+.slide img {
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+.slider-container-data {
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    color: white;
+}
+
+.click {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.click button {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.click button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Basic Search  */
+
+.basic-searcch {
+    background-color: #c6c9c9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.basic-searcch h1 {
+    color: #333;
+    margin: 1rem 30rem;
+}
+
+.search-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    margin: 1rem 22rem;
+}
+
+.basic-searcch input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    font-size: 16px;
+}
+
+.basic-searcch button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 1rem;
+    transition: 1s;
+}
+
+.advanced-search {
+    margin-top: 20px;
+    text-align: center;
+    height: 2rem;
+    width: 4rem;
+}
+
+
+a.advanced-search {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.basic-searcch button:hover {
+    background-color: #38bde9;
+    color: black;
+    border-radius: 5px;
+}
+
+
+
+
+/* footer */
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.social-links {
+    margin: 3rem;
+}
+
+.social-links a {
+    color: black;
+    margin: 0 10px;
+    text-decoration: none;
+    background: white;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 24%;
+    transition: all 1s;
+}
+
+.social-links i {
+    font-size: 20px;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.footer-nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    transition: 1s;
+    margin: 0 2rem;
+}
+
+.footer-nav a:hover {
+    background-color: #38bde9;
+    color: white;
+    border-radius: 5px;
+}
+
+.social-links a:hover {
+    background-color: #38bde9;
+    color: white;
+    border-radius: 5px;
+}

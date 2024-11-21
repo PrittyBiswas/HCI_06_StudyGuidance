@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find My Book Application</title>
+    <!-- IcoonCDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- StyleSheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section id="header">
+        <header>
+            <h1>Welcome To Find My Book Application</h1>
+        </header>
+        <div class="container">
+            <div class="navbar">
+                <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+                <div class="navbar-links" id="navLinks">
+                    <a href="index.html">Home</a>
+                    <a href="Search/Search.html">Search</a>
+                    <a href="Contact/Contact.html">Contact</a>
+                    <a href="Registration/Registration.html">Member</a>
+                    <a href="Login/Login.html">Login</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="slider-container">
+                <div class="slides">
+                    <div class="slide"><img src="../Img/pexels-photo-2041540.jpeg" alt="Slide 1"></div>
+                    <div class="slide"><img
+                            src="../Img/pngtree-an-old-library-has-wooden-step-leading-to-stairs-image_2513238.jpg"
+                            alt="Slide 2"></div>
+                    <div class="slide"><img src="../Img/shot-panoramic-composition-library_23-2150315619.avif"
+                            alt="Slide 3"></div>
+                </div>
+                <div class="slider-container-data">
+                    <h1>Welcome to Our Website</h1>
+                    <p>Discover amazing content and get connected with us!</p>
+                </div>
+                <div class="click">
+                    <button onclick="prevSlide()">❮</button>
+                    <button onclick="nextSlide()">❯</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Basic Search -->
+
+    <div class="container">
+        <div class="basic-searcch">
+            <h1>Basic Search</h1>
+            <div class="search-form">
+                <input type="text" placeholder="Title">
+                <input type="text" placeholder="Subject">
+                <button>Search</button>
+                <button><a href="../Search/Search.html" class="advanced-search"> Advanced Search </a></button>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- <footer> -->
+
+    <footer>
+        <div class="footer">
+            <div class="footer-nav">
+                <a href="index.html">Home</a>
+                <a href="Search/Search.html">Search</a>
+                <a href="Contact/Contact.html">Contact</a>
+                <a href="Registration/Registration.html">Member</a>
+                <a href="Login/Login.html">Login</a>
+            </div>
+
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright © 2024; Designed by Shahalam & Developed by Pritty Biswas</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
